@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func GoToOne(_ sender: Any) {
+        // go old test
+        let vc = self.storyboard?.instantiateViewController(withIdentifier:"EntranceOfOne")
+        self.present(vc!,animated: true,completion: nil)
+    }
 
 }
 
